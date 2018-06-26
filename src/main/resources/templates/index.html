@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <th:block th:replace="base :: csslinks"> </th:block>
+    <title>Potluck - Home Page</title>
+</head>
+
+<body>
+<nav th:replace="base :: navbar"></nav>
+
+<div class="jumbotron jumbotron-fluid text-center">
+    <div class="jumbotron text-sm-center">
+        <h1 class = "display-1">Welcome to the Potluck Portal!</h1>
+        <a th:href="@{/addperson}"><button class="btn btn-info btn-lg">Add Potluck Information</button></a>
+    </div>
+</div>
+<th:block th:replace="base :: jslinks"></th:block>
+</body>
+</html>
